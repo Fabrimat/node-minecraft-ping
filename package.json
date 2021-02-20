@@ -1,11 +1,11 @@
 {
-  "name": "minecraft-ping",
+  "name": "minecraft-ping-fix",
   "description": "sends pings to Minecraft servers of various versions",
   "version": "1.0.1",
   "main": "mcping.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:deathcap/node-minecraft-ping.git"
+    "url": "git@github.com/fabrimat/node-minecraft-ping.git"
   },
   "keywords": [
     "minecraft",
