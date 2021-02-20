@@ -69,6 +69,11 @@ function ping_fefd_udp(options, cb) {
       const challengeTokenInt = parseInt(challengeTokenString);
       //console.log('challenge token: '+challengeTokenInt);
       const challengeTokenBuffer = new Buffer(4);
+      try {
+        challengeTokenBuffer.writeUInt32BE(challengeTokenInt);
+      } catch(err) {
+        cb(new Error(err), null, 'fefd_udp');
+      }
       challengeTokenBuffer.writeUInt32BE(challengeTokenInt);
 
       const statusRequest = new Buffer(
