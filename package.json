@@ -1,7 +1,7 @@
 {
   "name": "minecraft-ping",
   "description": "sends pings to Minecraft servers of various versions",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "mcping.js",
   "repository": {
     "type": "git",
